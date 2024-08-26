@@ -1,0 +1,11 @@
+<h1>Sample Form</h1>
+
+<form> 
+  {{#fields}} 
+    {{#field}} 
+      <label>{{label}}</label> 
+      <input type="{{type}}" name="{{name}}"{{#errors}} class="error"{{/errors}}> 
+    {{/field}} 
+  {{/fields}}
+  <button type="submit">Submit</button> 
+</form>
